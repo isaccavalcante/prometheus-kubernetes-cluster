@@ -1,3 +1,11 @@
+## K8s and Prometheus cluster deployment
+
+This repository shows how to deploy an application on a kubernetes cluster, to be monitored by Prometheus, which will be installed on the cluster as well.
+
+The application deployed will be Grafana, which already exposes metrics in the Prometheus format.
+
+Grafana demo url: http://35.196.26.65:30003
+Prometheus demo url: http://35.196.26.65:30009
 ### Cluster setup
 
 Install docker, kubectl, kubelet and kubeadm on hosts machines:
@@ -61,6 +69,12 @@ kubectl get services -o wide
 ```
 ![List services](screenshots/service.png)
 
+List all created resources:
+
+```sh
+kubectl get all -o wide
+```
+![List all resources](screenshots/all.png)
 
 Create a ConfigMap volume (will be used later with prometheus)
 
