@@ -12,17 +12,30 @@ Run grafana on docker container:
 docker run -d -p 3000:3000 grafana/grafana
 ```
 
-Create kubernetes pod from configuration file:
+Create kubernetes Deployment from configuration file:
 
 ```sh
-kubectl create -f pod.yml
+kubectl create -f deploy.yml
 ```
 
-List created pods:
+List created deployments:
 
 ```sh
-kubectl get pods 
+kubectl get deployments
 ```
+
+Create a Service to load balance the cluster requests:
+
+```sh
+kubectl create -f service.yml
+```
+
+Create a ConfigMap volume (will be used later with prometheus)
+
+```sh
+kubectl create configmap prometheus-conf prometheus.yml
+```
+
 
 Install docker, kubectl, kubelet and kubeadm on hosts machines:
 
