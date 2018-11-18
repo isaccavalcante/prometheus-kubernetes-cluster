@@ -21,7 +21,7 @@ chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 Note: ignore system verification means bypassing kubernetes warning about using the newest version of docker
 
-Join cluster on other hosts:
+Join cluster on other nodes:
 
 ```sh
 kubeadm join <MASTER_IP_ADDRESS>:<PORT> --token <TOKEN> --discovery-token-ca-cert-hash <HASH> --ignore-preflight-errors=SystemVerification
@@ -44,14 +44,23 @@ kubectl create -f deploy.yml
 List created deployments:
 
 ```sh
-kubectl get deployments
+kubectl get deployments -o wide
 ```
+![List deploys](screenshots/deploy.png)
 
-Create a Service to load balance the cluster requests:
+Create a service to manage incoming requests:
 
 ```sh
 kubectl create -f service.yml
 ```
+
+List created services:
+
+```sh
+kubectl get services -o wide
+```
+![List deploys](screenshots/deploy.png)
+
 
 Create a ConfigMap volume (will be used later with prometheus)
 
