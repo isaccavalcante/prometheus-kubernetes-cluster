@@ -37,6 +37,7 @@ apt update && apt install -y kubelet kubeadm kubectl
 Init kubernetes cluster on master host:
 
 ```sh
+echo "source <(kubectl completion bash)" >> ~/.bashrc
 kubeadm init --apiserver-advertise-address=$(hostname -i) --ignore-preflight-errors=SystemVerification
 mkdir -p $HOME/.kube
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
