@@ -5,12 +5,15 @@
    name: my-first-pd
    
  spec:
-   containers:
-     - name: prometheus
-       image: prom/prometheus
-       ports:
-         - containerPort: 9090
-     - name: grafana
-       image: grafana/grafana
-       ports:
-         - containerPort: 3000
+  selector:
+    app: Grafana
+
+  containers:
+    - name: prometheus
+      image: prom/prometheus
+      ports:
+        - containerPort: 9090
+    - name: grafana
+      image: grafana/grafana
+      ports:
+        - containerPort: 3000
