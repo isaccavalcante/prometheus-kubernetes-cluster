@@ -59,7 +59,7 @@ List created services:
 ```sh
 kubectl get services -o wide
 ```
-![List deploys](screenshots/deploy.png)
+![List services](screenshots/service.png)
 
 
 Create a ConfigMap volume (will be used later with prometheus)
