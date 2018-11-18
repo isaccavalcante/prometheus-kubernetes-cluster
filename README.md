@@ -5,6 +5,7 @@ This repository shows how to deploy an application on a kubernetes cluster, to b
 The application deployed will be Grafana, which already exposes metrics in the Prometheus format.
 
 Grafana demo url: http://35.196.26.65:30003
+
 Prometheus demo url: http://35.196.26.65:30009
 ### Cluster setup
 
@@ -42,6 +43,13 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 ```
 
 ### Deployment 
+
+List available nodes:
+
+```sh
+kubectl get nodes -o wide
+```
+![List nodes](screenshots/nodes.png)
 
 Create kubernetes Deployment from configuration file:
 
