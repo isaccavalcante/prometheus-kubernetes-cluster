@@ -89,3 +89,11 @@ Create a ConfigMap volume (will be used later with prometheus)
 ```sh
 kubectl create configmap prometheus-conf prometheus.yml
 ```
+
+### References
+
+[Linux Tips](https://www.youtube.com/watch?v=pV0nkr61XP8)
+
+[IBM FSS FCI and Counter Fraud Management](https://www.youtube.com/watch?v=VB7vI9OT-WQ)
+
+[Kubernetes Interactive Tutorial](https://kubernetes.io/docs/tutorials/hello-minikube/)
