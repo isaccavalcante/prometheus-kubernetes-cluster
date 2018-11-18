@@ -11,3 +11,15 @@ Run grafana on docker container:
 ```sh
 docker run -d -p 3000:3000 grafana/grafana
 ```
+
+Create kubernetes pod from configuration file:
+
+```sh
+kubectl create -f pod.yml
+```
+
+List created pods:
+
+```sh
+kubectl get pods 
+```
