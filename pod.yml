@@ -2,7 +2,7 @@
  apiVersion: v1
  kind: Pod
  metadata:
-   name: my-first-pd
+   name: my-first-pod
    
  spec:
   selector:
