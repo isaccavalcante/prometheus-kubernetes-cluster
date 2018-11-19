@@ -97,3 +97,5 @@ kubectl get all -o wide
 [IBM FSS FCI and Counter Fraud Management](https://www.youtube.com/watch?v=VB7vI9OT-WQ)
 
 [Kubernetes Interactive Tutorial](https://kubernetes.io/docs/tutorials/hello-minikube/)
+
+[DevOps Cube](https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/)
