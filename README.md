@@ -94,7 +94,7 @@ kubectl get all -o wide
 
 [Linux Tips](https://www.youtube.com/watch?v=pV0nkr61XP8)
 
-[IBM FSS FCI and Counter Fraud Management](https://www.youtube.com/watch?v=VB7vI9OT-WQ)
+[IBM FSS FCI and Counter Fraud Management](https://www.youtube.com/watch?v=ohSUtEfDefc)
 
 [Kubernetes Interactive Tutorial](https://kubernetes.io/docs/tutorials/hello-minikube/)
 
