@@ -1,8 +1,8 @@
 ## K8s and Prometheus cluster deployment
 
-This repository shows how to deploy an application on a kubernetes cluster, to be monitored by Prometheus, which will be installed on the cluster as well.
+This repository shows how to deploy an application in a kubernetes cluster, to be monitored by Prometheus, which will be installed in the cluster as well.
 
-The application deployed will be Grafana, which already exposes metrics in the Prometheus format.
+The deployed application will be Grafana, which already exposes metrics in Prometheus format.
 
 Grafana demo url: http://35.196.26.65:30003
 
@@ -51,7 +51,7 @@ kubectl get nodes -o wide
 ```
 ![List nodes](screenshots/nodes.png)
 
-Create kubernetes Deployment from configuration file:
+Create kubernetes deployment from configuration file:
 
 ```sh
 kubectl create -f deploy.yml
