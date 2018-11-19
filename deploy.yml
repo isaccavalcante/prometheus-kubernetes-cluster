@@ -21,7 +21,15 @@ spec:
           image: prom/prometheus
           ports:
             - containerPort: 9090
+          volumeMounts:
+            - mountPath: /etc/prometheus/
+              name: my-volume
         - name: grafana
           image: grafana/grafana
           ports:
             - containerPort: 3000
+      volumes:
+      - name: my-volume
+        configMap:
+          name: prometheus-conf
+          
