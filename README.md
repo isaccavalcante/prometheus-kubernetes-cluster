@@ -51,6 +51,12 @@ kubectl get nodes -o wide
 ```
 ![List nodes](screenshots/nodes.png)
 
+Create configuration map required to mount prometheus volume:
+
+```sh
+kubectl create -f configmap.yml
+```
+
 Create kubernetes deployment from configuration file:
 
 ```sh
