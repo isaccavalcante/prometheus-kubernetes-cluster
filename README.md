@@ -84,12 +84,6 @@ kubectl get all -o wide
 ```
 ![List all resources](screenshots/all.png)
 
-Create a ConfigMap volume (will be used later with prometheus)
-
-```sh
-kubectl create configmap prometheus-conf prometheus.yml
-```
-
 ### References
 
 [Linux Tips](https://www.youtube.com/watch?v=pV0nkr61XP8)
